@@ -1,0 +1,28 @@
+:root {
+  --primary: #1C2C44;
+  --bg-main: #0F172A;
+  --bg-card: #020617;
+  --accent: #2563EB;
+  --accent-hover: #1D4ED8;
+  --text-main: #E5E7EB;
+  --text-muted: #94A3B8;
+  --border: #1E293B;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-main);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}

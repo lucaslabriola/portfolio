@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owais Raza | Frontend Web Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <a href="#" class="logo">OWR</a>
+        <nav id="navbar">
+          <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li>
+              <button id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-sun"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <button id="mobile-menu-btn" aria-label="Mobile menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-nav-overlay"></div>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            I am a <br />
+            <span class="typewriter-text"></span
+            ><span class="typewriter-cursor"></span>
+          </h1>
+          <h2 class="hero-subtitle">Frontend Web Developer</h2>
+          <p class="hero-description">
+            I build exceptional digital experiences with clean, efficient code
+            and modern web technologies.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+            <a href="./owais resume.pdf" class="btn btn-secondary" download
+              >Download Resume</a
+            >
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./img.png" alt="Owais Raza" class="profile-img" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Motivated Frontend Developer skilled in building responsive and
+              dynamic applications. Proficient in HTML, CSS, JavaScript,
+              Tailwind CSS, API integration, and Supabase. Currently expanding
+              skills in React.js with a passion for real-world projects and
+              continuous learning.
+            </p>
+
+            <h3>Skills</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="devicon-html5-plain colored"></i>
+                </div>
+                <span>HTML5</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="devicon-css3-plain colored"></i>
+                </div>
+                <span>CSS3</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="devicon-supabase-plain colored"></i>
+                </div>
+                <span>Supabase</span>
+              </div>
+              
+              
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="devicon-react-original colored"></i>
+                </div>
+                <span>React.js</span>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="devicon-tailwindcss-plain colored"></i>
+                </div>
+                <span>Tailwind</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="devicon-bootstrap-plain colored"></i>
+                </div>
+                <span>Bootstrap</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="devicon-nodejs-plain colored"></i>
+                </div>
+                <span>Node & Exp.js</span>
+              </div>
+
+             
+
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="devicon-git-plain colored"></i>
+                </div>
+                <span>Git</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="devicon-github-original"></i>
+                </div>
+                <span>GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="section-divider"></div>
+
+        <div class="projects-grid">
+          <div class="project-card visible">
+            <div class="project-image">
+              <img src="registrationform.png" alt="Student Management System" />
+            </div>
+            <div class="project-content">
+              <h3>Student Mgmt System</h3>
+              <p>
+                A comprehensive student registration system with CRUD
+                operations, data validation, and Supabase management.
+              </p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://owaisraza72.github.io/Student-Management-System-/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/owaisraza72/Student-Management-System-"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card visible">
+            <div class="project-image">
+              <img src="postapp.png" alt="Post Management App" />
+            </div>
+            <div class="project-content">
+              <h3>Post App</h3>
+              <p>
+                A dynamic post application with real-time database integration,
+                user authentication, and CRUD functionality using Supabase.
+              </p>
+              <div class="project-tech">
+                <span>JS</span>
+                <span>Supabase</span>
+                <span>Auth</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://owaisraza72.github.io/Post_App/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/owaisraza72/Post_App"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card visible">
+            <div class="project-image">
+              <img src="food.png" alt="Food Recipes App" />
+            </div>
+            <div class="project-content">
+              <h3>Food Recipes Finder</h3>
+              <p>
+                An interactive recipe search application that fetches data from
+                external APIs with filtering and detailed cooking instructions.
+              </p>
+              <div class="project-tech">
+                <span>API</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://owaisraza72.github.io/Food-Recipes-API/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/owaisraza72/Food-Recipes-API"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="section-divider"></div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>owaisrazax.dev@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <span>+92-3083968390</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Karachi, Pakistan</span>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://github.com/owaisraza72"
+                target="_blank"
+                aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/owais-raza-a439b033b/"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/owais_raza72/"
+                target="_blank"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="mailto:owaisrazax.dev@gmail.com" aria-label="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="#" class="footer-logo">OWR</a>
+            <p class="footer-tagline">
+              Building digital experiences that matter
+            </p>
+          </div>
+
+          <div class="footer-social">
+            <a
+              href="https://github.com/owaisraza72"
+              target="_blank"
+              class="social-icon"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/owais-raza-a439b033b/"
+              target="_blank"
+              class="social-icon"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/owais_raza72/"
+              target="_blank"
+              class="social-icon"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="mailto:owaisrazax.dev@gmail.com"
+              class="social-icon"
+              aria-label="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            <p>
+              &copy; <span id="year"></span> Owais Razax. All rights reserved.
+            </p>
+          </div>
+          <p class="footer-credit">
+            Made with <i class="fas fa-heart"></i> by Owais Razax
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
