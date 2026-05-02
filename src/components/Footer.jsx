@@ -8,25 +8,25 @@ function Footer() {
             <div className="footer-container">
 
                 <div className="footer-social">
-                    <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/lucaslabriola" target="_blank" aria-label="GitHub">
                         <FaGithub size={20} />
                     </a>
 
-                    <a href="https://linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/lucas-gustavo-labriola/" target="_blank" aria-label="LinkedIn">
                         <FaLinkedinIn size={20} />
                     </a>
 
-                    <a href="mailto:tuemail@gmail.com" aria-label="Email">
+                    <a href="mailto:lucas.labriola@hotmail.com" aria-label="Email">
                         <MdEmail size={22} />
                     </a>
 
-                    <a href="https://wa.me/549XXXXXXXXXX" target="_blank" aria-label="WhatsApp">
+                    <a href="https://wa.me/5491133119977" target="_blank" aria-label="WhatsApp">
                         <FaWhatsapp size={22} />
                     </a>
                 </div>
 
                 <div className="footer-bottom">
-                    © {new Date().getFullYear()} LucasDev - Todos los derechos reservados
+                    © {new Date().getFullYear()} LL Dev - Todos los derechos reservados
                 </div>
 
             </div>

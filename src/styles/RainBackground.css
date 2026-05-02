@@ -1,0 +1,62 @@
+.rain-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -10;
+    overflow: hidden;
+}
+
+/* Capa 1 - Gotas sutiles */
+.rain-background::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background-image:
+        repeating-linear-gradient(
+            108deg,
+            transparent 0px,
+            transparent 40px,
+            rgba(255,255,255,0.08) 40px,
+            rgba(255,255,255,0.08) 41px,
+            transparent 41px,
+            transparent 80px
+        );
+    animation: rainMove1 4s linear infinite;
+}
+
+/* Capa 2 - Gotas aún más sutiles */
+.rain-background::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background-image:
+        repeating-linear-gradient(
+            105deg,
+            transparent 0px,
+            transparent 55px,
+            rgba(255,255,255,0.05) 55px,
+            rgba(255,255,255,0.05) 56px,
+            transparent 56px,
+            transparent 110px
+        );
+    animation: rainMove2 5s linear infinite;
+}
+
+@keyframes rainMove1 {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100%); }
+}
+
+@keyframes rainMove2 {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100%); }
+}

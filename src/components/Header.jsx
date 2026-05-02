@@ -10,7 +10,9 @@ function Header() {
         <header id="header">
             <div className="container">
 
-                <a href="#" className="logo">LucasDev</a>
+                <a href="#" className="logo" aria-label="Inicio">
+                    <img src="/img/logo-transparent.png" alt="Logo" className="logo-icon" />
+                </a>
 
                 <Navbar isOpen={menuOpen} />
 

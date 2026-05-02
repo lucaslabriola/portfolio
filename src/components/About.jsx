@@ -2,18 +2,20 @@ import "../styles/about.css";
 
 function About() {
 
-    const skills = [
-        { name: "HTML5", icon: "devicon-html5-plain colored" },
-        { name: "CSS3", icon: "devicon-css3-plain colored" },
-        { name: "JavaScript", icon: "devicon-javascript-plain colored" },
-        { name: "React", icon: "devicon-react-original colored" },
-        { name: "Node.js / Express", icon: "devicon-nodejs-plain colored" },
-        { name: "Supabase", icon: "devicon-supabase-plain colored" },
-        { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored" },
-        { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
-        { name: "Git", icon: "devicon-git-plain colored" },
-        { name: "GitHub", icon: "devicon-github-original" }
-    ];
+const skills = [
+    { name: "C#", icon: "devicon-csharp-plain colored" },
+    { name: ".NET Framework", icon: "devicon-dotnetcore-plain colored" },
+    { name: "SQL Server", icon: "devicon-microsoftsqlserver-plain colored" },
+    { name: "MySQL", icon: "devicon-mysql-plain colored" },
+    { name: "React", icon: "devicon-react-original colored" },
+    { name: "JavaScript", icon: "devicon-javascript-plain colored" },
+    { name: "HTML5", icon: "devicon-html5-plain colored" },
+    { name: "CSS3", icon: "devicon-css3-plain colored" },
+    { name: "Python", icon: "devicon-python-plain colored" },
+    { name: "Pandas", icon: "devicon-pandas-plain colored" },
+    { name: "Numpy", icon: "devicon-numpy-plain colored" },
+    { name: "Git", icon: "devicon-git-plain colored" },
+];
 
     return (
         <section id="about" className="section about">
@@ -34,17 +36,15 @@ function About() {
 
                     <div className="about-text">
                         <p>
-                            Soy desarrollador de software con foco en la creación de aplicaciones
-                            claras, mantenibles y orientadas a resolver problemas reales.
-                            Trabajo tanto en frontend como en backend, con experiencia en
-                            interfaces modernas, lógica de negocio y bases de datos.
+                            Analista en Sistemas con experiencia en desarrollo y mantenimiento
+                            de sistemas administrativos en C# .NET (WinForms) y SQL Server.
+                            Actualmente me desempeño en el sector público, liderando una secciónoperativa y participando en la mejora y automatización de procesos internos.
                         </p>
 
                         <p>
-                            Me interesa construir soluciones bien pensadas, priorizando la
-                            experiencia de usuario, la calidad del código y la escalabilidad.
-                            Actualmente sigo ampliando mis conocimientos en tecnologías web
-                            modernas y buenas prácticas de desarrollo.
+                            Formación técnica en programación, bases de datos y
+                            análisis de datos, con fuerte orientación a estructuras sólidas,
+                            trazabilidad y optimización de sistemas existentes.
                         </p>
                     </div>
                 </div>
@@ -52,9 +52,10 @@ function About() {
 
                <section id="skills" className="section skills">
 
-                    <h3 className="about-subtitle">
+                    <h2 className="section-title-about">
                         Mis <span className="title-highlight">habilidades</span>
-                    </h3>
+                    </h2>
+                    <div className="section-divider"></div>
 
                     <div className="skills-list">
                         {skills.map((skill) => (

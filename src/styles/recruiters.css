@@ -1,0 +1,157 @@
+.recruiters-section {
+    position: relative;
+    padding: 92px 20px;
+    background:
+        radial-gradient(circle at 18% 20%, rgba(56, 189, 248, 0.14), transparent 28%),
+        radial-gradient(circle at 82% 72%, rgba(16, 185, 129, 0.12), transparent 24%),
+        linear-gradient(180deg, #08111f 0%, #0f172a 100%);
+    overflow: hidden;
+}
+
+.recruiters-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(148, 163, 184, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent);
+    pointer-events: none;
+}
+
+.recruiters-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+    align-items: center;
+    gap: 36px;
+    padding: 42px;
+    border: 1px solid rgba(148, 163, 184, 0.16);
+    border-radius: 28px;
+    background:
+        linear-gradient(135deg, rgba(15, 23, 42, 0.86), rgba(2, 6, 23, 0.78)),
+        rgba(15, 23, 42, 0.76);
+    box-shadow: 0 24px 90px rgba(2, 6, 23, 0.42);
+    backdrop-filter: blur(18px);
+}
+
+.recruiters-content {
+    display: grid;
+    gap: 18px;
+}
+
+.recruiters-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    padding: 9px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(59, 130, 246, 0.28);
+    background: rgba(59, 130, 246, 0.1);
+    color: #bfdbfe;
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.recruiters-kicker svg {
+    color: #38bdf8;
+}
+
+.recruiters-content h2 {
+    margin: 0;
+    color: #f8fafc;
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    line-height: 1.05;
+    font-weight: 800;
+}
+
+.recruiters-actions {
+    display: grid;
+    gap: 14px;
+}
+
+.recruiters-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 58px;
+    padding: 0 24px;
+    border-radius: 14px;
+    border: 1px solid transparent;
+    color: #f8fafc;
+    font-size: 1rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+}
+
+.recruiters-button:hover {
+    transform: translateY(-3px);
+}
+
+.recruiters-button-primary {
+    background: #2563eb;
+    box-shadow: 0 16px 42px rgba(37, 99, 235, 0.28);
+}
+
+.recruiters-button-primary:hover {
+    background: #1d4ed8;
+    box-shadow: 0 20px 56px rgba(56, 189, 248, 0.34);
+}
+
+.recruiters-button-secondary {
+    background: rgba(15, 23, 42, 0.72);
+    border-color: rgba(148, 163, 184, 0.22);
+    color: #dbeafe;
+}
+
+.recruiters-button-secondary:hover {
+    border-color: rgba(56, 189, 248, 0.5);
+    background: rgba(30, 41, 59, 0.86);
+    box-shadow: 0 16px 40px rgba(2, 6, 23, 0.28);
+}
+
+@media (max-width: 820px) {
+    .recruiters-section {
+        padding: 72px 20px;
+    }
+
+    .recruiters-container {
+        grid-template-columns: 1fr;
+        padding: 32px 24px;
+        text-align: center;
+        border-radius: 24px;
+    }
+
+    .recruiters-content,
+    .recruiters-actions {
+        justify-items: center;
+    }
+
+    .recruiters-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .recruiters-container {
+        padding: 28px 16px;
+    }
+
+    .recruiters-kicker {
+        border-radius: 16px;
+        text-align: left;
+    }
+
+    .recruiters-button {
+        min-height: 54px;
+        padding: 0 18px;
+    }
+}
