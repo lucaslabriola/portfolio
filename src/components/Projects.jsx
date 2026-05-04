@@ -99,7 +99,7 @@ const projects = [
     status: "En línea",
     icon: LayoutTemplate,
     stack: ["Agencia propia", "Planes comerciales", "Identidad de marca", "Branding"],
-    github: "#",
+    github: "https://github.com/lucaslabriola/al-media",
     preview: "https://al-media.netlify.app/",
   },
   {
@@ -121,7 +121,7 @@ const projects = [
     status: "Proyecto universitario",
     icon: Building2,
     stack: ["Reservas", "Huéspedes", "Facturación", "Consumos", "Habitaciones", "Caja"],
-    github: "#",
+    github: "https://github.com/lucaslabriola/hotel-paraiso",
     preview: "#",
   },
   {
@@ -142,7 +142,7 @@ const projects = [
     status: "Disponible online",
     icon: ShoppingBag,
     stack: ["E-commerce", "Catálogo digital", "Moda", "Carrito de compras", "Productos"],
-    github: "#",
+    github: "https://github.com/lucaslabriola/pov-store",
     preview: "https://pov-store.netlify.app/",
   },
 ];

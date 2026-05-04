@@ -1,7 +1,7 @@
 import { Download, Linkedin, Sparkles } from "lucide-react";
 import "../styles/recruiters.css";
 
-const CV_URL = `${import.meta.env.BASE_URL}assets/cv.pdf`;
+const CV_URL = `${import.meta.env.BASE_URL}assets/Labriola_Lucas_CV.pdf`;
 const LINKEDIN_URL = "https://www.linkedin.com/in/lucas-gustavo-labriola/";
 
 function Recruiters() {
@@ -18,7 +18,7 @@ function Recruiters() {
         </div>
 
         <div className="recruiters-actions" aria-label="Acciones para reclutadores">
-          <a className="recruiters-button recruiters-button-primary" href={CV_URL} download="Lucas-Labriola-cv.pdf">
+          <a className="recruiters-button recruiters-button-primary" href={CV_URL} download="Labriola_Lucas_CV.pdf">
             <Download size={22} />
             Descargar CV
           </a>
